@@ -17,3 +17,6 @@ App.css是项目的样式文件
 
 Package.json包含了项目名称，描述，依赖列表，运行项目的script，eslint配置，browsers配置
 
+# 提示
+Create-react-app脚手架创建的项目默认是不支持less语法，所以我们通过 yarn eject 暴露出 webpack 文件
+在config->webpack.config.js中添加，对照sass变量的定义，写入less。配置完成之后在 yarn add less
